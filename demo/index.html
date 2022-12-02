@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <script type="module">
+            import '../belgiantrain-liveboard.js';
+        </script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background: black;
+                margin: 0;
+            }
+            #liveboard {
+                display: block;
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <belgiantrain-liveboard
+            id="liveboard"
+            lang="en"
+        ></belgiantrain-liveboard>
+
+        <script>
+            fetch(
+                'http://api.irail.be/liveboard/?station=Gent-Sint-Pieters&arrdep=departure&alerts=true&format=json&lang=en',
+                {
+                    method: 'GET',
+                    headers: {
+                        Accept: 'application/json',
+                    },
+                }
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById('liveboard').data = data;
+                });
+        </script>
+    </body>
+</html>
