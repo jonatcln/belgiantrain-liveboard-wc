@@ -3,7 +3,7 @@
     "description": "A web component simulating the liveboards in the NMBS/SNCB train stations",
     "license": "MIT",
     "author": "Jonathan C. (https://github.com/jonatcln)",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "repository": "github:jonatcln/belgiantrain-liveboard-wc",
     "main": "index.js",
     "module": "index.js",

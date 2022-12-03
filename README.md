@@ -12,7 +12,7 @@ This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) reco
 ### Install with npm
 
 ```sh
-npm install github:jonatcln/belgiantrain-liveboard-wc
+npm install github:jonatcln/belgiantrain-liveboard-wc#semver:^0.1
 ```
 
 ```html
@@ -26,7 +26,7 @@ npm install github:jonatcln/belgiantrain-liveboard-wc
 ```html
 <script
     type="module"
-    src="https://cdn.jsdelivr.net/gh/jonatcln/belgiantrain-liveboard-wc/dist/belgiantrain-liveboard.min.js"
+    src="https://cdn.jsdelivr.net/gh/jonatcln/belgiantrain-liveboard-wc@0.1/dist/belgiantrain-liveboard.min.js"
 ></script>
 ```
 
